@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background_clr">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="129dp"
+        android:layout_height="39dp"
+        android:layout_alignBaseline="@+id/tv1"
+        android:layout_alignParentStart="true"
+        android:text="Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv1"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_style"
+        android:hint="नाम"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv4"
+        android:layout_alignParentStart="true"
+        android:text="Stiching Facilities"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv4"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:background="@drawable/edittext_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:hint="सिलाई की सुविधाएं"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv6"
+        android:layout_alignParentStart="true"
+        android:text="Days Open"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv6"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:textAlignment="center"
+        android:background="@drawable/edittext_style"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp"
+        android:hint="सप्ताह में कितने दिन उपलब्ध"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv14"
+        android:layout_alignParentStart="true"
+        android:text="Contact No:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tv14"
+        android:layout_width="239dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="227dp"
+        android:background="@drawable/edittext_style"
+        android:textAlignment="center"
+        android:hint="फ़ोन नंबर"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="331dp"
+        android:background="@drawable/button_style"
+        android:text="add user/ पुष्टि करें"
+        android:textSize="20sp"
+        android:textColor="@color/txtclr"/>
+</RelativeLayout>
