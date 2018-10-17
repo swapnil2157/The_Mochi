@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/shadow">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="129dp"
+        android:layout_height="39dp"
+        android:text="Name"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/tv1"
+        android:layout_width="211dp"
+
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv2"
+        android:text=""
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv1"
+        android:text="Stiching Facilities" />
+
+    <EditText
+        android:id="@+id/tv4"
+        android:layout_width="182dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv3"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+
+        android:layout_below="@id/tv4"
+        android:text="Days Open" />
+
+    <EditText
+        android:id="@+id/tv6"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv5"
+        android:text=""
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/tv13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv6"
+        android:text="Contact No:" />
+
+    <EditText
+        android:id="@+id/tv14"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv6"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv13"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="238dp"
+        android:background="@drawable/button_style"
+        android:text="add user" />
+
+</RelativeLayout>

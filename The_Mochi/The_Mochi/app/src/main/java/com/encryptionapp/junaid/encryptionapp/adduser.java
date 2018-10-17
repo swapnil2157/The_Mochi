@@ -2,23 +2,22 @@ package com.The_Mochi.Swap;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.The_Mochi.Swap.R;
 import com.firebase.ui.database.FirebaseListAdapter;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class adduser extends AppCompatActivity {
 
-    Button addmochi, signot;
+    Button addmochi;
     DatabaseReference reference;
     ListView listView;
 
@@ -28,21 +27,12 @@ public class adduser extends AppCompatActivity {
         setContentView(R.layout.activity_adduser);
 
         listView = findViewById(R.id.listviews);
-        addmochi = findViewById(R.id.addmochi);
+        addmochi=findViewById(R.id.addmochi);
         addmochi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(adduser.this, MainActivity.class);
+                Intent intent=new Intent(adduser.this,MainActivity.class);
                 startActivity(intent);
-            }
-        });
-        signot = findViewById(R.id.Signout);
-        signot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent redirect = new Intent(adduser.this, SignInActivity.class);
-                startActivity(redirect);
             }
         });
 
@@ -62,14 +52,13 @@ public class adduser extends AppCompatActivity {
             }
         };
 
-
         listView.setAdapter(firebaseListAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 UserModel userModel = (UserModel) adapterView.getItemAtPosition(i);
-                String geoUri = "http://maps.google.com/maps?q=loc:" + userModel.getLatitude();
+                String geoUri = "http://maps.google.com/maps?q=loc:"+ userModel.getLatitude();
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
                 startActivity(intent);
 //                Toast.makeText(adduser.this, ""+userModel.getLatitude(), Toast.LENGTH_SHORT).show();
